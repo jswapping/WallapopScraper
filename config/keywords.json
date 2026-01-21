@@ -1,0 +1,29 @@
+[
+  { "query": "iPhone 11 128GB", "category": "smartphones" },
+  { "query": "PS5", "category": "consolas" },
+  { "query": "Nintendo Switch", "category": "consolas" },
+
+  { "query": "RTX 4070 Ti", "category": "tarjetas_graficas" },
+  { "query": "RTX 3080", "category": "tarjetas_graficas" },
+  { "query": "GTX 1660 Super", "category": "tarjetas_graficas" },
+
+  { "query": "Intel Core i9 13900K", "category": "procesadores" },
+  { "query": "AMD Ryzen 9 7950X", "category": "procesadores" },
+  { "query": "Intel Core i7 12700K", "category": "procesadores" },
+
+  { "query": "ASUS ROG Strix Z790", "category": "placas_base" },
+  { "query": "MSI B550 Gaming Plus", "category": "placas_base" },
+
+  { "query": "Corsair Vengeance 32GB DDR5", "category": "memoria_ram" },
+  { "query": "G.Skill Trident Z 16GB DDR4", "category": "memoria_ram" },
+
+  { "query": "Samsung 980 Pro 1TB", "category": "almacenamiento" },
+  { "query": "WD Black SN850 2TB", "category": "almacenamiento" },
+
+  { "query": "NZXT Kraken X73", "category": "disipadores_liquidos" },
+  { "query": "Noctua NH-D15", "category": "disipadores_aire" },
+
+  { "query": "Corsair RM850x", "category": "fuentes_poder" },
+  { "query": "Seasonic Focus GX-750", "category": "fuentes_poder" },
+  { "query": "RTX 3050", "category": "tarjetas_graficas" }
+]
