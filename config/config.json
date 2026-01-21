@@ -1,8 +1,8 @@
 {
   "min_price" : 0,
   "max_price": 600,
-  "latitude": 10,
-  "longitude": 10,
+  "latitude": 37,
+  "longitude": -5,
   "distance_km": 50,
   "order_by" : "newest"
 }
