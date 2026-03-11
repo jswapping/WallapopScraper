@@ -3,7 +3,7 @@ import json
 
 BASE_DIR = os.path.dirname(__file__)
 CONFIG_PATH = os.path.join(BASE_DIR, "config", "config.json")
-KEYWORDS_PATH = os.path.join(BASE_DIR, "config", "keywords.json")
+KEYWORDS_PATH = os.path.join(BASE_DIR,"config", "keywords.json")
 RESULTS_DIR = os.path.join(BASE_DIR, "results")
 LOGS_DIR = os.path.join(BASE_DIR, "logs")
 
