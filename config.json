@@ -1,0 +1,12 @@
+{
+  "min_price": 0,
+  "max_price": 600,
+  "latitude": 37.339677,
+  "longitude": -5.841805,
+  "distance_km": 50,
+  "order_by": "newest",
+  "discord_webhook_url": "",
+  "notify_on_new_items": true,
+  "max_price_alert": null,
+  "check_interval_minutes": 30
+}
