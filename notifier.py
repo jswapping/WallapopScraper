@@ -53,7 +53,7 @@ def notify_new_items(webhook_url: str, keyword: str, new_items: list, max_price_
     }
 
     if _post_to_discord(webhook_url, payload):
-        print(f"  [✓] Discord: notified {len(filtered)} new items for '{keyword}'.")
+        print(f"  [+] Discord: notified {len(filtered)} new items for '{keyword}'.")
 
 
 def notify_search_summary(webhook_url: str, summary: list):
@@ -76,7 +76,7 @@ def notify_search_summary(webhook_url: str, summary: list):
     }
 
     _post_to_discord(webhook_url, payload)
-    print("  [✓] Discord: summary sent.")
+    print("  [+] Discord: summary sent.")
 
 
 def notify_price_drop(webhook_url: str, keyword: str, item: dict, old_price: float, new_price: float):
@@ -103,7 +103,7 @@ def notify_price_drop(webhook_url: str, keyword: str, item: dict, old_price: flo
     }
 
     if _post_to_discord(webhook_url, payload):
-        print(f"[✓] Discord: price drop alert sent for '{item['title']}'.")
+        print(f"[+] Discord: price drop alert sent for '{item['title']}'.")
 
 
 def test_webhook(webhook_url: str) -> bool:
@@ -122,5 +122,5 @@ def test_webhook(webhook_url: str) -> bool:
 
     success = _post_to_discord(webhook_url, payload)
     if success:
-        print("[✓] Webhook test successful!")
+        print("[+] Webhook test successful!")
     return success

@@ -39,7 +39,7 @@ def save_config(config: dict):
     os.makedirs(os.path.dirname(CONFIG_PATH), exist_ok=True)
     with open(CONFIG_PATH, "w", encoding="utf-8") as f:
         json.dump(config, f, ensure_ascii=False, indent=2)
-    print("[✓] Config saved.")
+    print("[+] Config saved.")
 
 
 def load_keywords() -> list:
@@ -61,7 +61,7 @@ def save_keywords(keywords: list):
     os.makedirs(os.path.dirname(KEYWORDS_PATH), exist_ok=True)
     with open(KEYWORDS_PATH, "w", encoding="utf-8") as f:
         json.dump(keywords, f, ensure_ascii=False, indent=2)
-    print(f"[✓] {len(keywords)} keywords saved.")
+    print(f"[+] {len(keywords)} keywords saved.")
 
 
 def save_results(items: list, keyword: str):

@@ -69,7 +69,7 @@ def run_scrape_all(config: dict, keywords: list, notify: bool = True):
     if notify and webhook_url:
         notify_search_summary(webhook_url, summary)
 
-    print("\n[✓] Done.\n")
+    print("\n[+] Done.\n")
 
 
 def _check_price_drops(webhook_url: str, keyword: str, previous: list, current: list):
@@ -103,7 +103,7 @@ def run_single_search(config: dict):
     save_opt = input("  ¿Guardar resultados? (s/N): ").strip().lower()
     if save_opt == "s":
         path = save_results(items, query)
-        print(f"  [✓] Saved to {path}")
+        print(f"  [+] Saved to {path}")
 
     webhook_url = config.get("discord_webhook_url", "")
     if webhook_url:
@@ -136,7 +136,7 @@ def manage_keywords(keywords: list) -> list:
             if idx.isdigit() and 1 <= int(idx) <= len(keywords):
                 removed = keywords.pop(int(idx) - 1)
                 save_keywords(keywords)
-                print(f"  [✓] Removed: {removed['query']}")
+                print(f"  [+] Removed: {removed['query']}")
             else:
                 print("  [!] Invalid index.")
 
@@ -225,7 +225,7 @@ def run_monitor_mode(config: dict, keywords: list):
             print(f"  [*] Next check in {interval} minutes...\n")
             time.sleep(interval * 60)
     except KeyboardInterrupt:
-        print("\n  [✓] Monitor mode stopped.")
+        print("\n  [+] Monitor mode stopped.")
 
 
 def main():
